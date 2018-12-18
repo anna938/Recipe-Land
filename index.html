@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<link href="https://fonts.googleapis.com/css?family=Chewy|Roboto:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Recipe Land</title>
+</head>
+<body> 
+<header>
+	<div class="container">
+		<h1>Recipe Land</h1>
+		<div class="search">
+		    
+		    <form>
+		      <input type="text" id="searchText" placeholder="Seach your Recipe"
+		      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seach your Recipe'" />
+		      <!-- <button type=submit id="src"><i class="fa fa-search"></i></button> -->
+		      <button type="submit" id="src" /><i class="fa fa-search"></i></button>
+		      <!-- <div id="filterIcon"><i class="fas fa-filter fa-5x"></i> </div> -->
+		     </form>
+		      
+		    
+		</div>
+			<div class="filterOptions">
+				<!-- Filters will show here -->
+				<div id="showFilterSection"><span id="filterIcon"><i class="fas fa-sliders-h fa-3x"></i></span><span id="filterIconText">&nbsp;Filter&nbsp;</span></div>
+				    
+			</div>
+			<hr>
+			<div id="containerFilterRecipe">
+				<ul>
+					<li id="filterIngredient">Ingredients</li>
+					<li id="filterTime">Prep Time</li>
+					<li id="filterCuisines">Cuisines</li>
+					<li id="filterCourse">Course</li>
+
+				</ul>
+				
+				<div id="containerFilterRecipeItem">
+					<!-- //ingredient container -->
+				   <div class="containerSearhIngreients">
+				   	    <!-- <h2>Add Ingredients</h2> -->
+					    <form>
+					      <input type="text" id="searchIngedients" placeholder="Add Ingredients" 
+					      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seach your Recipe'">
+					      <button type="submit" id="srcIngredient"><i class="fas fa-plus-circle fa-2x"></i></button>
+					      
+					  </form>
+					    
+					   
+					</div>
+					<!-- Prep Time Container -->
+					<div class="containerTime">
+						<div class="btnTime">
+							<span class="timeValue" data-value="300">5 </span>
+							<span class="timeUnit">Min</span>
+							
+						</div>
+						<div class="btnTime">
+							<span class="timeValue" data-value="900">15 </span>
+							<span class="timeUnit">Min</span>
+						</div>
+						<div class="btnTime">
+							<span class="timeValue" data-value="1800">30 </span>
+							<span class="timeUnit">Min</span>
+						</div>
+						<div class="btnTime">
+							<span class="timeValue" data-value="2700">45 </span>
+							<span class="timeUnit">Min</span>
+						</div>
+						<div class="btnTime">
+							<span class="timeValue" data-value="3600">1 </span>
+							<span class="timeUnit">Hr</span>
+						</div>
+						<div class="btnTime">
+							<span class="timeValue" data-value="7200">2 </span>
+							<span class="timeUnit">Hrs</span>
+						</div>
+
+					</div>
+					<!-- Types of Cuisine Container -->
+					<div class="containerCuisine">
+						<span data-value="cuisine^cuisine-american"> American</span>
+						<span data-value="cuisine^cuisine-italian"> Italian</span>
+						<span data-value="cuisine^cuisine-asian"> Asian</span>
+						<span data-value="cuisine^cuisine-mexican"> Mexican</span>
+						<span data-value="cuisine^cuisine-french"> French</span>
+						<span data-value="cuisine^cuisine-barbecue"> Barbecue</span>
+						<span data-value="cuisine^cuisine-indian"> Indian</span>
+						<span data-value="cuisine^cuisine-chinese"> Chinese</span>
+						<span data-value="cuisine^cuisine-english"> English</span>
+						<span data-value="cuisine^cuisine-mediterranean"> Mediterranean</span>
+						<span data-value="cuisine^cuisine-greek"> Greek</span>
+						<span data-value="cuisine^cuisine-spanish"> Spanish</span>
+						<span data-value="cuisine^cuisine-thai"> Thai</span>
+						<span data-value="cuisine^cuisine-moroccan"> Moroccan</span>
+						<span data-value="cuisine^cuisine-irish"> Irish</span>
+						<span data-value="cuisine^cuisine-japanese"> Japanese</span>
+						<span data-value="cuisine^cuisine-hawaiin"> Hawaiin</span>
+						<span data-value="cuisine^cuisine-swedish"> Swedish</span>
+										
+			 
+					</div>
+					<!-- Types of Courses Container -->
+					<div class="containerCourse">
+						<span data-value="course^course-Main Dishes"> Main Dishes</span>
+						<span data-value="course^course-Desserts"> Desserts</span>
+						<span data-value="course^course-Side Dishes"> Side Dishes</span>
+						<span data-value="course^course-Lunch"> Lunch and Snacks</span>
+						<span data-value="course^course-Appetizers"> Appetizers</span>
+						<span data-value="course^course-Salads"> Salads</span>
+						<span data-value="course^course-Breads"> Breads</span>
+						<span data-value="course^course-Breakfast and Brunch"> Breakfast and Brunch</span>
+						<span data-value="course^course-Soups"> Soups</span>
+						<span data-value="course^course-Beverages"> Beverages</span>
+						<span data-value="course^course-Condiments and Sauces"> Condiments and Sauces</span>
+						<span data-value="course^course-Cocktails"> Cocktails</span>
+					</div>
+				</div>
+			</div>  	
+  		
+	</div>
+</header>
+
+ 	<!-- TotalNumbers Container -->
+	<div id="totalResult"><span></span></div>	
+
+	<!-- Results Container -->
+	  <div id="result"></div>
+  <div class="showMore">
+  	
+  </div>
+
+  
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
